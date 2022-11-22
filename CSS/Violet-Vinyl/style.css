@@ -1,0 +1,47 @@
+/* Write your CSS here - remember to add Id's or classes to the HTML file */
+* {
+  color: white;
+  font-family: "Segoe UI", Verdana, sans-serif;
+}
+body {
+  background-color: black;
+}
+h1 {
+  background-image: url(./img/Records.jpg);
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+p {
+  font-size: 16px;
+}
+img {
+  width: 500px;
+}
+/* Class selectors */
+.selection {
+  background-color: #ef8354;
+}
+
+.selling {
+  background-color: #0e7c7b;
+}
+.music {
+  background-color: #9c538b;
+}
+
+footer {
+  text-align: center;
+}
+a {
+  color: #ef8354;
+}
+
+a:hover {
+  color: #9c528b;
+}

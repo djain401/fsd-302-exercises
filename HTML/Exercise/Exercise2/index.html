@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <main>
+      <h1>Get in Touch</h1>
+
+      <section>
+        <form action="">
+        <div>
+          <label for="firstname">First Name</label>
+          <br>
+          <input type="text" name="firstname" id="firstname"
+          /></label>
+        </div>
+        <br>
+        <div>
+            <label for="surname">Surname</label>
+            <br>
+            <input type="text" name="surname" id="surname" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <br>
+        <div>
+                <p>Where did you find us?</p>
+                <label for="friends">Friends</label><input type="radio" name="wheredidyoufindus" id="friends" value='friends'>
+                <label for="socialmedia">Social Media</label><input type="radio" name="wheredidyoufindus" id="socialmedia" value='socialmedia'>
+         </div>
+        <br>    
+        <div>
+            <label for="message">Message</label>
+            <br>
+            <textarea name="message" id="message" cols="30" rows="10" ></textarea>
+
+        </div>
+        <br>
+        <br>
+        <input type="button" value="Submit">
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
