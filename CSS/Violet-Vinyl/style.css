@@ -23,6 +23,9 @@ p {
 img {
   width: 500px;
 }
+span {
+  font-weight: bold;
+}
 /* Class selectors */
 .selection {
   background-color: #ef8354;
@@ -39,6 +42,7 @@ footer {
   text-align: center;
 }
 a {
+  text-decoration: none;
   color: #ef8354;
 }
 
