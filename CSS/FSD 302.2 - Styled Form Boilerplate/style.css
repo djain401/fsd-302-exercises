@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+body {
+  background-color: #274471;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+  width: 100%;
+
+  padding: 10px 16px 10px 16px;
+
+  margin: 8px 0;
+
+  border-radius: 5px;
+
+  border: none;
+}
+
+.container {
+  width: 400px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 6px;
+  margin: 30px auto 30px auto;
+}
+
+#contactForm {
+  padding: 25px;
+}
+
+#submit-button {
+  background-color: #1ac0f3;
+  padding: 14px 20px;
+  color: white;
+}
+
+input:hover {
+  background-color: #edeade;
+}
+
+textarea {
+  resize: none;
+}
