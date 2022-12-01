@@ -1,0 +1,27 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.box1 {
+  background-color: powderblue;
+}
+
+.box2 {
+  background-color: hotpink;
+}
+
+div {
+  display: inline-block; /*ask instructor*/
+  height: 200px;
+  width: 25%;
+  font-size: 30px;
+}
+
+.em {
+  font-size: 2em;
+}
+
+.rem {
+  font-size: 2rem;
+}

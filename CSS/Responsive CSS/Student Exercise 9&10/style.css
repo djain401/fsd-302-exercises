@@ -1,0 +1,84 @@
+* {
+  background-color: black;
+}
+
+@media screen and (min-width: 600px) {
+  * {
+    background-color: red;
+  }
+
+  .s,
+  .m,
+  .l,
+  .vl {
+    display: none;
+  }
+  .vs {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  * {
+    background-color: yellow;
+  }
+
+  .vs,
+  .m,
+  .l,
+  .vl {
+    display: none;
+  }
+
+  .s {
+    display: block;
+  }
+}
+@media screen and (min-width: 800px) {
+  * {
+    background-color: blue;
+  }
+
+  .vs,
+  .s,
+  .l,
+  .vl {
+    display: none;
+  }
+
+  .m {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  * {
+    background-color: pink;
+  }
+
+  .vs,
+  .s,
+  .m,
+  .vl {
+    display: none;
+  }
+  .l {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  * {
+    background-color: green;
+  }
+
+  .vs,
+  .s,
+  .m,
+  .l {
+    display: none;
+  }
+  .vl {
+    display: block;
+  }
+}
