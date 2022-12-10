@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: white;
+  gap: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper > div {
+  background-color: lightgray;
+  padding: 1em;
+}
+
+.nested {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  grid-auto-rows: minmax(70px, auto);
+}
+.nested > div {
+  border: #333 1px solid;
+  padding: 1em;
+}
