@@ -27,17 +27,18 @@ console.log(diceOne);
 console.log(diceTwo);
 if(diceOne === 6 && diceTwo === 6)
 {
-    console.log("Top prize - a bear!");
+    console.log(`You rolled a ${diceOne} and ${diceTwo} and you win the top prize - a bear!`);
 }
 else if(diceOne === diceTwo){
-    console.log("You win three free throws!");
+    console.log(`You rolled a ${diceOne} and ${diceTwo} and you win three free throws!`);
 }
 else if(diceOne % 2 === 0 || diceTwo % 2 === 0)
 {
-    console.log("You win one free throw!");
+    console.log(`You rolled a ${diceOne} and ${diceTwo} and you win one free throw!`);
 }
 else{
-    console.log("You lose the game!")
+    console.log(`You rolled a ${diceOne} and ${diceTwo} and you lose the game!`)
 }
+
 
 
