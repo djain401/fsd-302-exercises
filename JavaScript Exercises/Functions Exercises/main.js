@@ -30,7 +30,7 @@ console.log(welcome("ermias","kidane"));
 function temperatureConverter(fahrenheit)
 {
     let celcius = (fahrenheit - 32) * 5/9;
-    return celcius;
+    return Math.floor(celcius);
 }
 
 console.log(temperatureConverter(100));
@@ -41,24 +41,27 @@ console.log(temperatureConverter(10));
 
 function humanYearsToDogYears(humanYears,name)
 {
+    let result;
     if(humanYears<= 15)
     {
-        result = 1;
-        return `${name}'s age is ${result} dogyears`;
+         result = humanYears/15;
+       
     }
     else if(humanYears>15 && humanYears<=24)
     {
-        result = 2;
-        return `${name}'s age is ${result} dogyears`;
+        result = ((humanYears - 15)/9) + 1;
+       
     }
     else
     {
         result = 2 + (humanYears-24)/5;
-        return `${name}'s age is ${result} dogyears`;
+ 
     }
+
+    return `${name}'s age is ${result} dogyears`;
 }
 
-console.log(humanYearsToDogYears(29,'Divya'));
+console.log(humanYearsToDogYears(30,'Divya'));
 
 
 //Exercise 6
