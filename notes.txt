@@ -1,0 +1,35 @@
+
+<style>
+      h1{
+        text-align: center;
+      }
+</style>
+
+To link styles.css to index.html file
+<link rel="stylesheet" href="styles.css">
+
+
+For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a meta element with a special content attribute.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<div> element for design layout
+
+<article>       </article>
+article elements commonly contain multiple elements that have related information. In this case, it will contain a coffee flavor and a price for that flavor. 
+
+pseudoselector
+a:visited{
+  color: grey;
+}
+a:hover{
+  color: brown;
+}
+a:active{
+  color: white;
+}
+
+h1 header element has deafult top margin
+
+Gitbash - commands
+cd pwd ls clear

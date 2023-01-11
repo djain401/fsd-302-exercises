@@ -91,7 +91,7 @@ nav a {
   /* Use flexbox to justify the content to the end of the container */
   display: flex;
   margin: 0 -10px;
-  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .split-nav-push-left li {

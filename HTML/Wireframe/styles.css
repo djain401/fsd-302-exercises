@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: black;
+  color: white;
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 800px;
+}
+
+header h1 {
+  flex: 1;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+}
+
+.hero {
+  background: gray;
+  max-width: 800px;
+  margin: 40px auto;
+  display: flex;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1rem;
+  align-items: center;
+}
+
+.hero-text {
+  margin: 0.2rem 3rem 2rem;
+}
+
+.products {
+  background-color: white;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-card {
+  background-color: rgb(187, 141, 230);
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  height: 180px;
+  border: 2px solid black;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h4 {
+  font-size: large;
+}
+
+footer {
+  max-width: 800px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 0.4rem;
+}
+
+.message {
+  display: flex;
+  gap: 1rem;
+  max-width: 800px;
+  justify-content: space-evenly;
+}
+
+#submit {
+  align-self: center;
+}
+
+textarea {
+  resize: none;
+  border-radius: 7px;
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+a:link {
+  color: blue;
+}
