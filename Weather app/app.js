@@ -30,6 +30,7 @@ function celciusToFahrenheitToggle()
 //Function to get weather data from api calls by passing latitude and longitude. 
 async function getWeatherData(latitude, longitude){
 
+    document.getElementById('error').innerText = "";
     //removeEventListener used to remove multiple Events created when function is called more than once
     degreeContainer.removeEventListener('click',celciusToFahrenheitToggle);
     //api calls
@@ -66,7 +67,7 @@ async function getWeatherData(latitude, longitude){
 }
 
 
-window.addEventListener("load",()=> {
+// window.addEventListener("load",()=> {
 
     let latitude;
     let longitude;
@@ -131,7 +132,7 @@ window.addEventListener("load",()=> {
 
 
    
-})
+// })
 
 
 
