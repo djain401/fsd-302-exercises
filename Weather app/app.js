@@ -35,7 +35,7 @@ async function getWeatherData(latitude, longitude){
     degreeContainer.removeEventListener('click',celciusToFahrenheitToggle);
     //api calls
     let apiCall = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
-    let apiCallForCity =`http://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${apiKey}`
+    let apiCallForCity =`https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${apiKey}`
     //waiting for url to return some response only then it moves forward
     response = await fetch(apiCall);
     data = await response.json();
@@ -49,7 +49,7 @@ async function getWeatherData(latitude, longitude){
     const iconCode = data.weather[0].icon;
     console.log(iconCode);
     // To get weather icon based on icon code.
-    const iconUrl = "http://openweathermap.org/img/wn/"+ iconCode + "@2x.png";
+    const iconUrl = "https://openweathermap.org/img/wn/"+ iconCode + "@2x.png";
     //To get country name in English from country code
     locationTimezone.textContent = `${cityData[0].name}, ${regionNamesInEnglish.of(country)}`;
     //Kelvin to celcius conversion for temperature
@@ -82,7 +82,7 @@ async function getWeatherData(latitude, longitude){
         }else{
             document.getElementById('error').innerText = "";
         }
-        let apiCallByUserInput = `http://api.openweathermap.org/geo/1.0/direct?q=${searchValue}&limit=1&appid=${apiKey}`;
+        let apiCallByUserInput = `https://api.openweathermap.org/geo/1.0/direct?q=${searchValue}&limit=1&appid=${apiKey}`;
         try{
             coordResponse = await fetch(apiCallByUserInput);
             coordData = await coordResponse.json();
