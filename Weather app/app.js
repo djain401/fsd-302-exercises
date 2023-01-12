@@ -72,9 +72,10 @@ async function getWeatherData(latitude, longitude){
     let latitude;
     let longitude;
 
+    
     document.querySelector('#search-button').addEventListener('click', async ()=> {
     
-        console.log('test');
+       
         const searchValue = document.querySelector('#city').value;
         if (!searchValue){
             document.getElementById('error').innerText = "Please provide a value for city";
