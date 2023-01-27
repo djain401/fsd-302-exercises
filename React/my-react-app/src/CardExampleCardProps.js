@@ -5,7 +5,6 @@ import { faker } from "@faker-js/faker";
 const extra = (
   <>
     <a>
-      ../..
       <Icon name="user" />
       {faker.datatype.number(100)} Friends
     </a>
